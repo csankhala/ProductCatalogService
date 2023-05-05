@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.github.csankhala
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, gradle, http-client, java, java-application, junit, kafka, logback, lombok, micronaut-aop, micronaut-build, netty-server, openapi, readme, serialization-jackson, shade, swagger-ui, test-resources, yaml]
