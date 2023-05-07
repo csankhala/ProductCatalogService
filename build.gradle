@@ -5,7 +5,7 @@ plugins {
 }
 
 version = "0.1"
-group = "com.github.csankhala"
+group = "com.github.csankhala.ecommerce"
 
 repositories {
     mavenCentral()
@@ -24,10 +24,13 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     compileOnly("org.projectlombok:lombok")
     runtimeOnly("ch.qos.logback:logback-classic")
+    implementation 'org.mapstruct:mapstruct:1.5.3.Final'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
+    annotationProcessor 'io.micronaut:micronaut-inject-java:3.8.7'
 }
 
 application {
-    mainClass.set("com.github.csankhala.Application")
+    mainClass.set("com.github.csankhala.ecommerce.Application")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
@@ -40,12 +43,12 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("com.github.csankhala.*")
+        annotations("com.github.csankhala.ecommerce.*")
     }
     testResources {
         sharedServer = true
     }
 }
-
-
-
+sourceSets {
+    main.java.srcDirs += "build/generated/sources/annotationProcessor/java/main"
+}
