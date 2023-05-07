@@ -1,3 +1,6 @@
+> This service repo is part of below project:
+https://github.com/csankhala/ecommerce-micronaut-kafka
+
 ## Requirement
 As a product catalog service provider, I want to be able to provide up-to-date information about products to other services in the system, so that customers can make informed purchasing decisions.
 
