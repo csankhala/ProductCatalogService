@@ -15,6 +15,24 @@ Acceptance Criteria:
 - The product catalog service should be able to handle updates to product information, such as price changes or new product additions, in a timely manner.
 - The product catalog service should provide detailed logs and analytics to help diagnose and troubleshoot any issues that may arise during product information retrieval.
 
+## Setting up the project locally
+
+### IntelliJ setup
+The following instructions work for IntelliJ IDEA 2022.1 (Community Edition)
+
+#### Enable annotation processing
+- Go to File -> Settings -> Build, Execution, Deployment -> Compiler -> Annotation Processors
+- Check 'Enable annotation processing'
+
+#### Setup formatting
+* File -> Settings -> Editor -> General -> Ensure line feed at file end on Save
+* Install [the 'google-java-format' plugin](https://plugins.jetbrains.com/plugin/8527-google-java-format), and enable it in Settings
+* Apply [intellij-java-google-style.xml](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml) to [IntelliJ settings](https://www.jetbrains.com/help/idea/configuring-code-style.html#aadfdd2f)
+
+### Run Locally
+* Run com.github.csankhala.ecommerce.Application
+* Swagger URL: http://localhost:8080/swagger/views/swagger-ui
+
 ## Micronaut 3.9.1 Documentation
 
 - [User Guide](https://docs.micronaut.io/3.9.1/guide/index.html)
